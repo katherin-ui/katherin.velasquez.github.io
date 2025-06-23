@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katherin Leydi Velasquez Parque - Portafolio Personal</title>
-    <!-- Enlace a Google Fonts para la fuente Inter -->
+    <!-- Link to Google Fonts for the Inter font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Enlace a Font Awesome para los iconos -->
+    <!-- Link to Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* Base styles */
@@ -15,19 +15,19 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f0f2f5; /* Un fondo gris claro para el cuerpo */
-            color: #333;
+            background-color: #F8F0F3; /* Fondo rosa pastel para el cuerpo */
+            color: #4C4C4C; /* Gris oscuro para el texto para asegurar legibilidad */
         }
 
         .container {
             max-width: 900px; /* Ancho máximo para el contenido principal */
-            margin: 20px auto; /* Centrar el contenedor con un margen superior e inferior */
+            margin: 20px auto; /* Centrar el contenedor con margen superior e inferior */
             padding: 0 20px; /* Espaciado horizontal interno */
         }
 
         /* Header section styles */
         .header-section {
-            background-color: #ffffff; /* Fondo blanco para el encabezado */
+            background-color: #FFFFFF; /* Fondo blanco para el encabezado */
             padding: 40px 20px; /* Espaciado interno */
             border-radius: 12px; /* Esquinas redondeadas */
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Sombra suave */
@@ -36,12 +36,32 @@
         }
 
         .header-section h1 {
-            color: #2c3e50; /* Color oscuro para el nombre */
+            color: #C08D9B; /* Color rosa pastel para el nombre */
             margin-top: 0;
             margin-bottom: 10px;
-            font-size: 2.5em; /* Tamaño de fuente grande para el nombre */
+            font-size: 2.2em; /* Tamaño de fuente reducido para el nombre */
             font-weight: 700; /* Negrita */
+            position: relative; /* Para posicionar la huella */
         }
+
+        .header-section h1 .paw-icon-left {
+            position: absolute;
+            left: 20px; /* Ajustar según sea necesario */
+            top: 50%;
+            transform: translateY(-50%);
+            color: #DA9E9D; /* Rosa pastel para el icono de la huella */
+            font-size: 0.8em; /* Tamaño más pequeño para el icono de la huella */
+        }
+
+        .header-section h1 .paw-icon-right {
+            position: absolute;
+            right: 20px; /* Ajustar según sea necesario */
+            top: 50%;
+            transform: translateY(-50%);
+            color: #DA9E9D; /* Rosa pastel para el icono de la huella */
+            font-size: 0.8em; /* Tamaño más pequeño para el icono de la huella */
+        }
+
 
         .contact-info {
             display: flex;
@@ -55,44 +75,44 @@
             margin: 0;
             display: flex;
             align-items: center;
-            font-size: 1.1em;
-            color: #555;
+            font-size: 1em; /* Tamaño de fuente reducido */
+            color: #6A6A6A;
         }
 
         .contact-info a {
-            color: #007bff; /* Un azul vibrante para los enlaces */
+            color: #DA9E9D; /* Un rosa pastel vibrante para los enlaces */
             text-decoration: none;
             transition: color 0.3s ease; /* Transición suave al pasar el ratón */
         }
 
         .contact-info a:hover {
-            color: #0056b3;
+            color: #B57F80; /* Rosa más oscuro al pasar el ratón */
         }
 
         .contact-info .fas, .contact-info .fab {
             margin-right: 8px;
-            color: #6c757d; /* Color gris para los iconos */
+            color: #A3A3A3; /* Gris más claro para los iconos */
         }
 
         .quote {
             font-style: italic;
-            color: #666;
+            color: #8C8C8C;
             margin: 20px auto;
             max-width: 600px;
-            font-size: 1.1em;
+            font-size: 1em; /* Tamaño de fuente reducido */
             line-height: 1.8;
         }
 
         .quote cite {
             display: block;
             margin-top: 10px;
-            font-size: 0.9em;
-            color: #777;
+            font-size: 0.8em; /* Tamaño de fuente reducido */
+            color: #9A9A9A;
         }
 
         .bio {
-            font-size: 1.2em;
-            color: #444;
+            font-size: 1.1em; /* Tamaño de fuente reducido */
+            color: #5C5C5C;
             margin-top: 30px;
             max-width: 700px;
             margin-left: auto;
@@ -101,20 +121,21 @@
 
         /* Section general styles */
         .section-block {
-            background-color: #ffffff;
+            background-color: #FFFFFF;
             padding: 30px;
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
             margin-bottom: 20px;
         }
 
+        /* Section Header Styles (no longer collapsible) */
         .section-block h2 {
-            color: #007bff;
-            font-size: 1.8em;
+            color: #DA9E9D; /* Rosa pastel para los títulos de sección */
+            font-size: 1.6em; /* Tamaño de fuente reducido */
             margin-top: 0;
             margin-bottom: 25px;
             padding-bottom: 15px;
-            border-bottom: 2px solid #e9ecef; /* Línea divisoria suave */
+            border-bottom: 2px solid #F0D5D8; /* Línea divisoria suave en rosa pastel */
             display: flex;
             align-items: center;
             font-weight: 600; /* Seminegrita */
@@ -122,7 +143,7 @@
 
         .section-block h2 .fas {
             margin-right: 12px;
-            color: #007bff;
+            color: #DA9E9D;
         }
 
         /* Item list styles */
@@ -133,15 +154,15 @@
 
         .item-list li {
             margin-bottom: 20px;
-            border-left: 4px solid #007bff; /* Barra lateral para cada elemento */
+            border-left: 4px solid #DA9E9D; /* Barra lateral en rosa pastel para cada elemento */
             padding-left: 15px;
-            background-color: #fdfdfd;
+            background-color: #FEFEFF; /* Fondo más claro para los elementos de lista */
             border-radius: 8px;
             padding: 15px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03); /* Sombra más clara */
             display: flex; /* Usar flexbox para el contenido del list item */
             align-items: center; /* Alinear verticalmente al centro */
-            gap: 20px; /* Espacio entre el texto y la imagen */
+            gap: 20px; /* Espacio entre texto y la imagen */
             flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
         }
 
@@ -149,21 +170,20 @@
             flex: 1; /* Permitir que el texto ocupe el espacio restante */
         }
 
-        .item-list li img {
-            max-width: 250px; /* Aumentado el tamaño máximo para la imagen */
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
         /* Paragraph styles within item-list */
         .item-list p {
             margin-bottom: 5px;
-            color: #555;
+            color: #6A6A6A;
+            font-size: 0.95em; /* Tamaño de fuente ligeramente reducido */
+        }
+
+        .item-list h3 {
+            font-size: 1.1em; /* Tamaño de fuente ligeramente reducido para los subtítulos */
+            color: #C08D9B; /* Rosa pastel para los subtítulos */
         }
 
         .item-list .location-icon {
-            color: #6c757d;
+            color: #A3A3A3;
             margin-right: 5px;
         }
 
@@ -175,8 +195,8 @@
         }
 
         .skill-category {
-            background-color: #f8f9fa;
-            border: 1px solid #e0e0e0;
+            background-color: #FDF4F6; /* Rosa pastel más claro para las categorías de habilidades */
+            border: 1px solid #F0D5D8; /* Borde rosa pastel */
             padding: 15px 20px;
             border-radius: 8px;
             display: flex;
@@ -184,20 +204,22 @@
         }
 
         .skill-category h4 {
-            color: #007bff;
+            color: #DA9E9D;
             margin: 0;
             min-width: 120px; /* Ancho fijo para la categoría */
             font-weight: 600;
             flex-shrink: 0; /* Evitar que se encoja */
+            font-size: 0.95em; /* Tamaño de fuente reducido */
         }
 
         .skill-category p {
             margin: 0;
-            color: #444;
+            color: #5C5C5C;
             flex-grow: 1; /* Permitir que ocupe el espacio restante */
+            font-size: 0.95em; /* Tamaño de fuente reducido */
         }
 
-        /* Simple list styles (for compañeros and profesores) */
+        /* Simple list styles (for companions and professors) */
         .simple-list {
             list-style: none;
             padding: 0;
@@ -207,12 +229,12 @@
         }
 
         .simple-list li {
-            background-color: #f8f9fa;
+            background-color: #FDF4F6; /* Rosa pastel más claro para los elementos de lista simple */
             padding: 12px 18px;
             border-radius: 8px;
-            border: 1px solid #e9ecef;
-            color: #333;
-            font-size: 1.05em;
+            border: 1px solid #F0D5D8; /* Borde rosa pastel */
+            color: #5C5C5C;
+            font-size: 1em; /* Tamaño de fuente reducido */
             display: flex;
             align-items: center;
         }
@@ -221,11 +243,30 @@
         footer {
             text-align: center;
             padding: 25px;
-            background-color: #2c3e50; /* Color oscuro para el pie de página */
-            color: #ecf0f1; /* Texto claro */
+            background-color: #C08D9B; /* Rosa pastel más oscuro para el pie de página */
+            color: #FFFFFF; /* Texto blanco */
             margin-top: 30px;
             border-radius: 12px;
-            font-size: 0.9em;
+            font-size: 0.85em; /* Tamaño de fuente reducido */
+            position: relative; /* Para posicionar la huella */
+        }
+
+        footer .paw-icon-footer-left {
+            position: absolute;
+            left: 20px; /* Ajustar según sea necesario */
+            top: 50%;
+            transform: translateY(-50%);
+            color: #FFFFFF; /* Blanco para el icono de la huella */
+            font-size: 0.8em; /* Tamaño más pequeño para el icono de la huella */
+        }
+
+        footer .paw-icon-footer-right {
+            position: absolute;
+            right: 20px; /* Ajustar según sea necesario */
+            top: 50%;
+            transform: translateY(-50%);
+            color: #FFFFFF; /* Blanco para el icono de la huella */
+            font-size: 0.8em; /* Tamaño más pequeño para el icono de la huella */
         }
 
         /* Responsive Adjustments */
@@ -236,7 +277,7 @@
             }
 
             .header-section h1 {
-                font-size: 2em;
+                font-size: 1.8em; /* Ajustado para pantallas más pequeñas */
             }
 
             .contact-info {
@@ -248,8 +289,8 @@
                 padding: 25px;
             }
 
-            .section-block h2 {
-                font-size: 1.5em;
+            .section-block h2 { /* Targeting the new non-collapsible headers */
+                font-size: 1.3em; /* Ajustado para pantallas más pequeñas */
             }
 
             .skills-grid {
@@ -270,8 +311,7 @@
                 grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
             }
             .item-list li {
-                flex-direction: column; /* Apilar imagen y texto en pantallas pequeñas */
-                align-items: flex-start;
+                align-items: flex-start; /* Asegurar que el texto se alinee al inicio */
             }
         }
 
@@ -280,22 +320,22 @@
                 padding: 30px 15px;
             }
             .header-section h1 {
-                font-size: 1.8em;
+                font-size: 1.6em; /* Ajustado para pantallas más pequeñas */
             }
             .bio {
-                font-size: 1em;
+                font-size: 0.9em; /* Ajustado para pantallas más pequeñas */
             }
             .section-block {
                 padding: 20px;
             }
-            .section-block h2 {
-                font-size: 1.3em;
+            .section-block h2 { /* Targeting the new non-collapsible headers */
+                font-size: 1.1em; /* Ajustado para pantallas más pequeñas */
             }
             .item-list li {
                 padding: 10px;
             }
             .item-list h3 {
-                font-size: 1.1em;
+                font-size: 1em; /* Ajustado para pantallas más pequeñas */
             }
             .skill-category {
                 padding: 10px 15px;
@@ -305,9 +345,13 @@
 </head>
 <body>
     <div class="container">
-        <!-- Sección de Encabezado: Información Personal y Contacto -->
+        <!-- Header Section: Personal and Contact Information -->
         <header class="header-section">
-            <h1>Katherin Leydi Velasquez Parque</h1>
+            <h1>
+                <i class="fas fa-paw paw-icon-left"></i>
+                Katherin Leydi Velasquez Parque
+                <i class="fas fa-paw paw-icon-right"></i>
+            </h1>
             <div class="contact-info">
                 <p><i class="fas fa-envelope"></i> <a href="mailto:katherin.velasquez@ucsp.edu.pe">katherin.velasquez@ucsp.edu.pe</a></p>
                 <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/katherin-leydi-velasquez-parque-438158325/" target="_blank">linkedin</a></p>
@@ -315,93 +359,120 @@
             </div>
             <p class="bio">Soy Katherin Velasquez. Me encanta bailar a solas, donde puedo sentir la música en lo más profundo y disfrutarla con total libertad. También disfruto ayudar a los seres que no tienen voz, como los animales.</p>
 
-            <!-- El botón de Contactar ha sido eliminado según lo solicitado -->
+            <!-- The Contact button has been removed as requested -->
         </header>
 
-        <!-- Sección de Perfil -->
+        <!-- Profile Section -->
         <section class="section-block">
-            <h2><i class="fas fa-user-circle"></i> Perfil:</h2>
-            <ul class="item-list">
-                <li>
-                    <div class="text-content">
-                        <p>Estudiante de Administración de Negocios en la Universidad Católica San Pablo, actualmente cursando el sexto ciclo.</p>
+            <h2>
+                <i class="fas fa-user-circle"></i> Perfil:
+            </h2>
+            <div id="profile-content">
+                <ul class="item-list">
+                    <li>
+                        <div class="text-content">
+                            <p>Estudiante de Administración de Negocios en la Universidad Católica San Pablo, actualmente cursando el sexto ciclo.</p>
+                        </div>
+                        <!-- The image has been removed from this section -->
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section-block">
+            <h2>
+                <i class="fas fa-graduation-cap"></i> Educación:
+            </h2>
+            <div id="education-content">
+                <ul class="item-list">
+                    <li>
+                        <h3>Universidad Catolica San Pablo</h3>
+                        <p>Estudiante de administración de negocios</p>
+                        <p style="margin-top: 10px;"><i class="fas fa-map-marker-alt location-icon"></i> Arequipa, Peru</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- About Me Section (formerly Skills) -->
+        <section class="section-block">
+            <h2>
+                <i class="fas fa-info-circle"></i> Sobre mi:
+            </h2>
+            <div id="skills-content">
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Habilidades:</h4>
+                        <p>Resiliencia, Autocontrol</p>
                     </div>
-                    <img src="https://i.imgur.com/WBXKhrT.jpeg" alt="Katherin Velasquez" onerror="this.onerror=null;this.src='https://placehold.co/150x150/cccccc/333333?text=Imagen+no+disponible';">
-                </li>
-            </ul>
-        </section>
-
-        <!-- Sección de Educación -->
-        <section class="section-block">
-            <h2><i class="fas fa-graduation-cap"></i> EDUCACIÓN:</h2>
-            <ul class="item-list">
-                <li>
-                    <h3>Universidad Catolica San Pablo</h3>
-                    <p>Estudiante de administración de negocios</p>
-                    <p><i class="fas fa-map-marker-alt location-icon"></i> Arequipa, Peru</p>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Sección de Habilidades -->
-        <section class="section-block">
-            <h2><i class="fas fa-laptop-code"></i> HABILIDADES:</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>Habilidades:</h4>
-                    <p>Resiliencia, Autocontrol</p>
-                </div>
-                <div class="skill-category">
-                    <h4>Virtudes:</h4>
-                    <p>Justicia, Prudencia & fe</p>
+                    <div class="skill-category">
+                        <h4>Virtudes:</h4>
+                        <p>Justicia, Prudencia & fe</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Sección de Proyectos -->
+        <!-- Projects Section -->
         <section class="section-block">
-            <h2><i class="fas fa-folder-open"></i> PROYECTOS</h2>
-            <ul class="item-list">
-                <li>
-                    <p><strong>Trabajo social:</strong> Realicé trabajo social en un hogar de animales, donde brindé apoyo en rescates y campañas de esterilización para mejorar su bienestar y calidad de vida.</p>
-                </li>
-            </ul>
+            <h2>
+                <i class="fas fa-folder-open"></i> Proyectos:
+            </h2>
+            <div id="projects-content">
+                <ul class="item-list">
+                    <li>
+                        <p><strong>Trabajo social:</strong> Realicé trabajo social en un hogar de animales, donde brindé apoyo en rescates y campañas de esterilización para mejorar su bienestar y calidad de vida.</p>
+                    </li>
+                </ul>
+            </div>
         </section>
 
-        <!-- Sección de Compañeros -->
+        <!-- Companions Section -->
         <section class="section-block">
-            <h2><i class="fas fa-users"></i> Compañeros:</h2>
-            <ul class="simple-list">
-                <li><a href="https://www.linkedin.com/in/franklin-hilari%C3%B3n/" target="_blank">Franklin Hilarión</a></li>
-            </ul>
+            <h2>
+                <i class="fas fa-users"></i> Compañeros:
+            </h2>
+            <div id="companions-content">
+                <ul class="simple-list">
+                    <li><a href="https://www.linkedin.com/in/franklin-hilari%C3%B3n/" target="_blank">Franklin Hilarión</a></li>
+                </ul>
+            </div>
         </section>
 
-        <!-- Nueva Sección de Contactos -->
+        <!-- New Contacts Section -->
         <section id="contactos-section" class="section-block">
-            <h2><i class="fas fa-address-book"></i> Contactos:</h2>
-            <ul class="simple-list">
-                <li><a href="https://franklinhilarion.github.io/franklinhilarion/" target="_blank">Franklin Hilarión (Portafolio)</a></li>
-                <!-- Puedes añadir más contactos aquí si lo deseas -->
-            </ul>
+            <h2>
+                <i class="fas fa-address-book"></i> Contactos:
+            </h2>
+            <div id="contacts-content">
+                <ul class="simple-list">
+                    <li><a href="https://franklinhilarion.github.io/franklinhilarion/" target="_blank">Franklin Hilarión (Portafolio)</a></li>
+                    <!-- You can add more contacts here if you wish -->
+                </ul>
+            </div>
         </section>
 
-        <!-- Sección de Profesores -->
+        <!-- Professors Section -->
         <section class="section-block">
-            <h2><i class="fas fa-chalkboard-teacher"></i> Profesores:</h2>
-            <ul class="simple-list">
-                <li><a href="https://www.linkedin.com/in/ecuadrosv/" target="_blank">Dr. ERNESTO CUADROS VARGAS</a></li>
-            </ul>
+            <h2>
+                <i class="fas fa-chalkboard-teacher"></i> Profesores:
+            </h2>
+            <div id="professors-content">
+                <ul class="simple-list">
+                    <li><a href="https://www.linkedin.com/in/ecuadrosv/" target="_blank">Dr. ERNESTO CUADROS VARGAS</a></li>
+                </ul>
+            </div>
         </section>
     </div>
 
-    <!-- Pie de Página -->
+    <!-- Footer -->
     <footer>
+        <i class="fas fa-paw paw-icon-footer-left"></i>
         <p>&copy; 2025 Katherin Leydi Velasquez Parque. Todos los derechos reservados.</p>
+        <i class="fas fa-paw paw-icon-footer-right"></i>
     </footer>
 
-    <script>
-        // No se necesitan funciones de modal ya que ahora es una sección de desplazamiento.
-        // El botón "Contactar" ya no existe.
-    </script>
+    <!-- No JavaScript needed for collapsible sections as they are now always visible -->
 </body>
 </html>
